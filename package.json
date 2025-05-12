@@ -24,10 +24,12 @@
   "scripts": {
     "docs": "documentation build *.js -f html -o docs",
     "start:control": "npx babel --watch example/renderer/control.jsx --out-file example/renderer/control-compiled.js",
-    "start": "electron example/main.js"
+    "start": "electron main.js"
   },
   "dependencies": {
-    "electron-log": "^3.0.7"
+    "electron-log": "^3.0.7",
+    "pdf-to-printer": "^5.6.0",
+    "pdfkit": "^0.17.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
@@ -35,7 +37,7 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "classnames": "^2.2.6",
-    "electron": "^18.3.7",
+    "electron": "^18.3.15",
     "file-url": "^2.0.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
